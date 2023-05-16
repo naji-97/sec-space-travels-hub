@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import '../style/style.scss';
 
-import { addMissions } from '../redux/missions/missionSlice';
+import { addMissions, joinMission, leaveMission } from '../redux/missions/missionSlice';
 
 function Mission() {
   const dispatch = useDispatch();
@@ -17,6 +17,14 @@ function Mission() {
         });
     }
   }, [dispatch, missions.length]);
+
+  const handleJoinMission = (missionId) => {
+    dispatch(joinMission(missionId));
+  };
+
+  const handleLeaveMission = (missionId) => {
+    dispatch(leaveMission(missionId));
+  };
 
   return (
     <div className="mission-container">
@@ -53,7 +61,7 @@ function Mission() {
                   <button
                     type="button"
                     className="leave-mission-button"
-                    // onClick={() => handleLeaveMission(mission.mission_id)}
+                    onClick={() => handleLeaveMission(mission.mission_id)}
                   >
                     Leave Mission
                   </button>
@@ -61,7 +69,7 @@ function Mission() {
                   <button
                     type="button"
                     className="join-mission-button"
-                    // onClick={() => handleJoinMission(mission.mission_id)}
+                    onClick={() => handleJoinMission(mission.mission_id)}
                   >
                     Join Mission
                   </button>
