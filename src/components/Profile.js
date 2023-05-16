@@ -8,6 +8,9 @@ import '../style/style.scss';
 const Profile = () => {
   const missions = useSelector((state) => state.missions);
   const joinedMissions = missions.slice(1, 7).filter((mission) => mission.reserved);
+  const rockets = useSelector((state) => state.rockets.data);
+  const reservedRocktes = rockets.filter((r) => r.reserved);
+
   return (
     <Container className="p-2">
       <Row md={2}>
@@ -24,7 +27,17 @@ const Profile = () => {
             ))}
           </ListGroup>
         </Col>
-
+        <Col>
+          <h3>My Rockets</h3>
+          {reservedRocktes.length ? null : (
+            <Alert>You haven&apos;t reserved any rockets yet.</Alert>
+          )}
+          <ListGroup>
+            {reservedRocktes.map((r) => (
+              <ListGroup.Item key={r.id}>{r.rocket_name}</ListGroup.Item>
+            ))}
+          </ListGroup>
+        </Col>
       </Row>
     </Container>
   );
