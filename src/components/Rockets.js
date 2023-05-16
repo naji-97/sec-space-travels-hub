@@ -13,7 +13,7 @@ const RocketList = () => {
   }, [dispatch, rocketStatus]);
   return (
     <Container>
-      {rocketsData.map((rocket) => (
+      {rocketsData.slice(1).map((rocket) => (
         <RocketCard
           key={rocket.id}
           id={rocket.id}
