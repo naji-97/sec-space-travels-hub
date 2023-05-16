@@ -6,7 +6,9 @@ import {
 import { useDispatch } from 'react-redux';
 import { toggleRocketBooking } from '../redux/rockets/rocketSlice';
 
-const RocketCard = ({ id, name, description, imgUrl, reserved }) => {
+const RocketCard = ({
+  id, name, description, imgUrl, reserved,
+}) => {
   const dispatch = useDispatch();
   const handleClick = () => {
     dispatch(toggleRocketBooking(id));
@@ -43,11 +45,11 @@ const RocketCard = ({ id, name, description, imgUrl, reserved }) => {
 };
 
 RocketCard.propTypes = {
-  id: PropTypes.string.isRequired,
+  id: PropTypes.number.isRequired,
   name: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   imgUrl: PropTypes.string.isRequired,
-  reserved: PropTypes.string.isRequired,
+  reserved: PropTypes.bool.isRequired,
 };
 
 export default RocketCard;
