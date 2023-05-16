@@ -25,6 +25,7 @@ function Mission() {
   const handleLeaveMission = (missionId) => {
     dispatch(leaveMission(missionId));
   };
+  // console.log(missions);
 
   return (
     <div className="mission-container">
