@@ -2,9 +2,7 @@ import { createSlice } from '@reduxjs/toolkit';
 
 export const missionsSlice = createSlice({
   name: 'missions',
-  initialState: [
-
-  ],
+  initialState: [],
   reducers: {
     addMissions: (state, action) => {
       state.push(...action.payload);
