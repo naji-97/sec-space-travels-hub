@@ -3,7 +3,9 @@ import { useDispatch, useSelector } from 'react-redux';
 import '../style/style.scss';
 
 import {
-  fetchMissions, joinMission, leaveMission,
+  fetchMissions,
+  joinMission,
+  leaveMission,
 } from '../redux/missions/missionSlice';
 
 function Mission() {
@@ -15,6 +17,7 @@ function Mission() {
       dispatch(fetchMissions());
     }
   }, [dispatch, missions.status]);
+
   const handleJoinMission = (missionId) => {
     dispatch(joinMission(missionId));
   };
@@ -25,7 +28,6 @@ function Mission() {
 
   return (
     <div className="mission-container">
-
       <div className="titles">
         <h2 className="border-container">Mission</h2>
         <h2 className="border-container">Description</h2>
@@ -33,7 +35,7 @@ function Mission() {
         <h2 className="border-container"> </h2>
       </div>
       <ul className="mission-list">
-        {missions.data.length > 0 && missions.data.slice(1, 7).map((mission) => (
+        {missions.data && missions.data.slice(1, 7).map((mission) => (
           <li className="mission-item" key={mission.mission_id}>
             <div className="border-container">
               <h3 className="mission-name">{mission.mission_name}</h3>
@@ -42,7 +44,6 @@ function Mission() {
               <p className="mission-description">{mission.description}</p>
             </div>
             <div className="border-container">
-
               <div className="mission-badge-container">
                 {mission.reserved ? (
                   <div className="active-member-badge">Active Member</div>
@@ -52,7 +53,6 @@ function Mission() {
               </div>
             </div>
             <div className="border-container">
-
               <div className="mission-action-container">
                 {mission.reserved ? (
                   <button
