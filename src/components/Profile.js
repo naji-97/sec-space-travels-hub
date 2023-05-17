@@ -7,7 +7,7 @@ import '../style/style.scss';
 
 const Profile = () => {
   const missions = useSelector((state) => state.missions);
-  const joinedMissions = missions.slice(1, 7).filter((mission) => mission.reserved);
+  const joinedMissions = missions.data.slice(1, 7).filter((mission) => mission.reserved);
   const rockets = useSelector((state) => state.rockets.data);
   const reservedRocktes = rockets.filter((r) => r.reserved);
 

@@ -2,22 +2,19 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import '../style/style.scss';
 
-import { addMissions, joinMission, leaveMission } from '../redux/missions/missionSlice';
+import {
+  fetchMissions, joinMission, leaveMission,
+} from '../redux/missions/missionSlice';
 
 function Mission() {
   const dispatch = useDispatch();
   const missions = useSelector((state) => state.missions);
 
   useEffect(() => {
-    if (missions.length === 0) {
-      fetch('https://api.spacexdata.com/v3/missions')
-        .then((res) => res.json())
-        .then((data) => {
-          dispatch(addMissions(data));
-        });
+    if (missions.status === 'idle') {
+      dispatch(fetchMissions());
     }
-  }, [dispatch, missions.length]);
-
+  }, [dispatch, missions.status]);
   const handleJoinMission = (missionId) => {
     dispatch(joinMission(missionId));
   };
@@ -25,7 +22,6 @@ function Mission() {
   const handleLeaveMission = (missionId) => {
     dispatch(leaveMission(missionId));
   };
-  // console.log(missions);
 
   return (
     <div className="mission-container">
@@ -37,7 +33,7 @@ function Mission() {
         <h2 className="border-container"> </h2>
       </div>
       <ul className="mission-list">
-        {missions.slice(1, 7).map((mission) => (
+        {missions.data.length > 0 && missions.data.slice(1, 7).map((mission) => (
           <li className="mission-item" key={mission.mission_id}>
             <div className="border-container">
               <h3 className="mission-name">{mission.mission_name}</h3>
