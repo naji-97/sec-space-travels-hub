@@ -5,7 +5,6 @@
 - [📗 Table of Contents](#-table-of-contents)
 - [📖 Space Traveller's Hub ](#-space-travellers-hub-)
     - [Key Features ](#key-features-)
-  - [🚀 Live Demo ](#-live-demo-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -24,23 +23,13 @@
 
 **Space traveler's hub** is a single-page website where users can reserve rockets and join space missions.
 
-**Space travelers-hub** 
-
-
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
 - **You can reserve rocket**
-- **You can joing missions**
+- **You can join missions**
 - **You can view reservation on my profile page**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -103,19 +92,18 @@ To to build for the production, execute the following command:
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
-
-👤 **TayyabKM**
-
-- Github: [@TayyabKM](https://github.com/TayyabKM)
-- Twitter: [@TayyabI83126361](https://twitter.com/TayyabI83126361)
-- Linkedin: [@tayyab-irfan-01b72b1aa](https://www.linkedin.com/in/tayyab-irfan-01b72b1aa/)
+<br />
 
 👤 **Naji Ali**
 
 -  GitHub: [@Naji-97](https://github.com/naji-97/)
 - LinkedIn: [Naji Ali](https://www.linkedin.com/in/naji-ali-329065/)
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+👤 **Samuel Obuobi Lartey**
+
+- Github: [@kwesiObuobi](https://github.com/kwesiObuobi)
+- Twitter: [@kwesi_obuobi](https://twitter.com/kwesi_obuobi)
+- Linkedin: [@kwesi-obuobi](https://www.linkedin.com/in/kwesi-obuobi/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -123,7 +111,8 @@ To to build for the production, execute the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **The Project is complete**
+- [ ] Allow users to leave missions from the Profile page
+- [ ] Allow users to unreserve Rockets from the Profile page
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -146,8 +135,6 @@ If you like this project then give it a star ⭐️
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
 
