@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Profile Page should render correctly 1`] = `
+<div
+  className="p-2 container"
+>
+  <div
+    className="row row-cols-md-2"
+  >
+    <div
+      className="col"
+    >
+      <h3>
+        My Missions
+      </h3>
+      <div
+        className="fade alert alert-primary show"
+        role="alert"
+      >
+        You haven't joined any missions yet.
+      </div>
+      <div
+        className="list-group"
+        onKeyDown={[Function]}
+      />
+    </div>
+    <div
+      className="col"
+    >
+      <h3>
+        My Rockets
+      </h3>
+      <div
+        className="fade alert alert-primary show"
+        role="alert"
+      >
+        You haven't reserved any rockets yet.
+      </div>
+      <div
+        className="list-group"
+        onKeyDown={[Function]}
+      />
+    </div>
+  </div>
+</div>
+`;

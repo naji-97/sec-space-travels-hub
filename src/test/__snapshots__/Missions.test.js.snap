@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Missions component matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="mission-container"
+  >
+    <div
+      class="titles"
+    >
+      <h2
+        class="border-container"
+      >
+        Mission
+      </h2>
+      <h2
+        class="border-container"
+      >
+        Description
+      </h2>
+      <h2
+        class="border-container"
+      >
+        Status
+      </h2>
+      <h2
+        class="border-container"
+      >
+         
+      </h2>
+    </div>
+    <ul
+      class="mission-list"
+    />
+  </div>
+</DocumentFragment>
+`;
