@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/sec-space-travels-hub/static/css/main.4637a20d.css",
+    "main.js": "/sec-space-travels-hub/static/js/main.adbcbea4.js",
+    "static/js/787.b53e49c4.chunk.js": "/sec-space-travels-hub/static/js/787.b53e49c4.chunk.js",
+    "static/media/logo.png": "/sec-space-travels-hub/static/media/logo.27109cd3d329612a6ec3.png",
+    "index.html": "/sec-space-travels-hub/index.html",
+    "main.4637a20d.css.map": "/sec-space-travels-hub/static/css/main.4637a20d.css.map",
+    "main.adbcbea4.js.map": "/sec-space-travels-hub/static/js/main.adbcbea4.js.map",
+    "787.b53e49c4.chunk.js.map": "/sec-space-travels-hub/static/js/787.b53e49c4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4637a20d.css",
+    "static/js/main.adbcbea4.js"
+  ]
+}
