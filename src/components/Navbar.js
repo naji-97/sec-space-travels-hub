@@ -22,13 +22,13 @@ export default function Navbar() {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/Missions" className="link">
+            <NavLink to="/missions" className="link">
               Missions
             </NavLink>
           </li>
           <span className="horizontal-divider"> </span>
           <li>
-            <NavLink to="/Profile" className="link">
+            <NavLink to="/profile" className="link">
               My Profile
             </NavLink>
           </li>

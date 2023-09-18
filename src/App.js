@@ -13,8 +13,8 @@ function App() {
       <Routes>
         <Route path="/" element={<RocketList />} />
         <Route path="/sec-space-travels-hub" element={<RocketList />} />
-        <Route path="/Missions" element={<Missions />} />
-        <Route path="/Profile" element={<Profile />} />
+        <Route path="/missions" element={<Missions />} />
+        <Route path="/profile" element={<Profile />} />
       </Routes>
     </div>
   );
