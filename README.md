@@ -48,7 +48,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd my-folder
-  git clone https://github.com/naji-97/space-travelers-hub.git 
+  git clone https://github.com/naji-97/sec-space-travels-hub.git
   
 ```
 
@@ -97,7 +97,7 @@ To to build for the production, execute the following command:
 👤 **Naji Ali**
 
 -  GitHub: [@Naji-97](https://github.com/naji-97/)
-- LinkedIn: [Naji Ali](https://www.linkedin.com/in/naji-ali-329065/)
+- LinkedIn: [Naji Ali](https://www.linkedin.com/in/abdennaji/)
 
 👤 **Samuel Obuobi Lartey**
 

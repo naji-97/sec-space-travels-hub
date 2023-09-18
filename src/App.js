@@ -13,7 +13,6 @@ function App() {
       <Routes>
         <Route path="/" element={<RocketList />} />
         <Route path="/sec-space-travels-hub" element={<RocketList />} />
-        {/* sec-space-travels-hub/ */}
         <Route path="/Missions" element={<Missions />} />
         <Route path="/Profile" element={<Profile />} />
       </Routes>

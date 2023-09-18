@@ -1,5 +1,5 @@
 {
-  "homepage": "https://naji-97.github.io/sec-space-travels-hub/",
+  "homepage": "https://naji-97.github.io/sec-space-travels-hub",
   "name": "sec-space-travels-hub",
   "version": "0.1.0",
   "private": true,
@@ -10,6 +10,7 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.4.0",
     "bootstrap": "^5.2.3",
+    "gh-pages": "^6.0.0",
     "jest": "^27.5.1",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
@@ -24,8 +25,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
